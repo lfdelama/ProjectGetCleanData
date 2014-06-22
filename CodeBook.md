@@ -46,26 +46,29 @@ These signals were used to estimate variables of the feature vector for each pat
 * fBodyGyroMag
 * fBodyGyroJerkMag
 
-The set of variables that were estimated from these signals are: 
+The set of variables that were retrieved for further analysis, were the above signals followed by: 
 
 * mean(): Mean value
 * std(): Standard deviation
 * meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+
+It was also considered the vectors applied to the following variable:
+
 * angle(): Angle between to vectors.
 
-Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+Averaging the signals in a signal window sample and used in the above mentioned variable, there were added dditional variables to the anlysis. The new variables are recognised by the following sufixes:
 
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+* gravityMean
+* tBodyAccMean
+* tBodyAccJerkMean
+* tBodyGyroMean
+* tBodyGyroJerkMean
 
 
-Additionally,
+Additionally, three more variables are named during the script:
 
-activity: code from 1 to 6 equivalent to the activity performed during the values measurement.
-activity.name: refers to the activities performed during the values measurement and are as follows:
+* activity: code from 1 to 6 equivalent to the activity performed during the values measurement.
+* activity.name: refers to the activities performed during the values measurement and are as follows:
 
   * 1 WALKING
   * 2 WALKING_UPSTAIRS
@@ -74,6 +77,6 @@ activity.name: refers to the activities performed during the values measurement 
   * 5 STANDING
   * 6 LAYING
 
-subject: it is a number refering to the subject ID, ranging from 1 to 30
+* subject: it is a number refering to the subject ID, ranging from 1 to 30
 
 Finally, the variables preceeded by AVG- contain a single value indicating the average of all the values to the corresponding feature.
